@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= 'UTF-8' >
+        <title>ML API</title>
+
+    </head>
+
+    <body>
+        <style>
+            body{
+	        padding: 50px;
+            padding-top: 20;
+}
+            input [ type="text" ] {
+                padding: 10%;
+                border: 1px;
+                border-radius: 4px;
+            }
+            /* label{
+                /* font-weight:bold; */
+            /* } */
+
+        </style>
+        <div class="login">
+            <!-- <div style="center"></div> -->
+            <h1 style="text-align: center;"> CUSTOMER CHURN PREDICTER</h1>
+
+            <form action=" {{url for (predict)}}" method="post">
+                <div class= "form_section">
+                 
+                
+            </form>
+            <br>
+            <br>
+            {{ prediction }}
+        </div>
+    </body>
+</html>

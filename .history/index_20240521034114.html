@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= 'UTF-8' >
+        <title>ML API</title>
+
+    </head>
+
+    <body>
+        <style>
+            body{
+	        padding: 50px;
+            padding-top: 20;
+}
+            input [ type="text" ] {
+                padding: 10%;
+                border: 1px;
+                border-radius: 4px;
+            }
+            /* label{
+                /* font-weight:bold; */
+            /* } */
+
+        </style>
+        <section>
+            <div class="login">
+                <!-- <div style="center"></div> -->
+                <h1 style="text-align: center;"> CUSTOMER CHURN <br> PREDICTER</h1>
+        </section>
+
+            <section>
+                <form action=" {{url for (predict)}}" method="POST">
+                    <div>
+                        <label for="Total Charges"> Total Charges  </label> 
+                        <input type="number" name="Total Charges" id="name" placeholder="Total Charges" required="required" />
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="name"> Name </label> 
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required="required" />
+                    </div>
+
+                    
+
+                    <br>
+
+                    <div>
+                        <label for="gender"> Gender: </label>
+                        <label >YES</label>
+                        <input type="radio" name="title" value="YES">
+
+                        <label>NO</label>
+                        <input type="radio" name="title" value="NO">
+                    </div>
+
+                    <br>
+                    <div>
+                        <label for="Gender"> Gender </label>
+                        <select name="Gender" id="Gender">
+                            <option value="Male">Male</option>
+                            <option value="fem"></option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div>
+                        <input type="reset">
+                    </div>
+                    <br>
+
+                    <div>
+                        <input type="submit">
+                    </div>
+
+
+
+
+
+
+
+
+                </form>
+            </section>
+            
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= 'UTF-8' >
+        <title>ML API</title>
+
+    </head>
+
+    <body>
+        <style>
+            body{
+	        padding: 50px;
+            padding-top: 20;
+}
+            input [ type="text" ] {
+                padding: 10%;
+                border: 1px;
+                border-radius: 4px;
+            }
+            /* label{
+                /* font-weight:bold; */
+            /* } */
+
+        </style>
+        <div class="login">
+            <!-- <div style="center"></div> -->
+            <h1 style="text-align: center;"> CUSTOMER CHURN PREDICTER</h1>
+
+            <form action=" {{url for (predict)}}" method="post">
+                <div class= "form_section">
+                    <br>
+                    <h3>SEPAL LENGTH</h3>
+                    <input type="text" name="sepal_length" placeholder=" sepal length [4.0- 7.0]" required="required"/>
+                    <br>
+                    <h3>SEPAL WIDTH</h3>
+                    <input type="text" name="petal_width" placeholder=" petal width [2.0- 4.0]" required="required"/>
+                    <br>
+                    <h3>PETAL LENGTH</h3>
+                    <input type="text" name="petal_length" placeholder=" petal length 0.0- 2.0" required="required"/>
+                    <br>
+                    <h3>PETAL WIDTH</h3>
+                    <input type="text" name="petal_width" placeholder=" petal width [0.0- 1.0]" required="required"/>
+                    <br>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary btn-block btn-large" padding= 10px border= none > PREDICT</button>
+                
+            </form>
+            <br>
+            <br>
+            {{ prediction }}
+        </div>
+    </body>
+</html>
